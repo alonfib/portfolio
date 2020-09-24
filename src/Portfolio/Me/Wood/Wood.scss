@@ -1,0 +1,60 @@
+$woodOneColor: linear-gradient(183deg, #d1cec3 -33%, #625745 50%, #856a4c 185%);
+$woodTwoColor: linear-gradient(
+  163deg,
+  #d1cec3 -154%,
+  #625745 74%,
+  #ffffff 194%
+);
+$woodThreeColor: linear-gradient(90deg, #625745 50%, #a07f5c 98%);
+
+.wood {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+
+  .wood-1 {
+    position: absolute;
+    background: linear-gradient(
+      183deg,
+      #d1cec3 -33%,
+      #625745 50%,
+      #856a4c 185%
+    );
+    height: 51%;
+    width: 63%;
+    transform: rotate(8deg) skewX(11deg);
+    left: 27%;
+    bottom: 1%;
+    border-bottom-left-radius: 16px 3px;
+    border-top-left-radius: 4px 33px;
+  }
+
+  .wood-2 {
+    position: absolute;
+    background: linear-gradient(
+      163deg,
+      #d1cec3 -154%,
+      #625745 74%,
+      #ffffff 194%
+    );
+    height: 51%;
+    width: 29%;
+    transform: rotate(-11deg) skewX(-15deg);
+    left: -1.3%;
+    bottom: 22%;
+    border-top-right-radius: 4px 10px;
+  }
+
+  .wood-3 {
+    position: absolute;
+    background: linear-gradient(90deg, #625745 50%, #a07f5c 98%);
+    height: 59%;
+    width: 4%;
+    transform: skewX(-6deg) skewY(3deg);
+    left: 25%;
+    bottom: -2%;
+    z-index: -1;
+  }
+}

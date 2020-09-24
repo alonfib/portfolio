@@ -1,0 +1,37 @@
+.tabs {
+  height: 7%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  justify-items: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+
+  .name {
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .buttons {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      color: white;
+      text-decoration-line: none;
+    }
+  }
+}
+
+.tabs[data-isExtended="true"] {
+  // background: red;
+  opacity: 0.8;
+  background: #09041e;
+  transition: all 0.4s ease-in-out;
+}

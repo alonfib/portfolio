@@ -1,0 +1,44 @@
+.nose {
+  height: 20%;
+  width: 22%;
+  position: absolute;
+  bottom: 30%;
+  left: 38%;
+
+  .nose-1 {
+    height: 75%;
+    width: 19%;
+    position: absolute;
+    bottom: 20%;
+    background: #77503d;
+    left: 70%;
+  }
+
+  .nose-2 {
+    height: 24%;
+    width: 19%;
+    position: absolute;
+    bottom: 6%;
+    background: #77503d;
+    left: 85%;
+    transform: rotate(-41deg);
+  }
+
+  .nose-3 {
+    height: 75%;
+    width: 19%;
+    position: absolute;
+    bottom: 20%;
+    background: #77503d;
+    left: 21%;
+  }
+  .nose-4 {
+    height: 24%;
+    width: 19%;
+    position: absolute;
+    bottom: 6%;
+    background: #77503d;
+    left: 11%;
+    transform: rotate(31deg);
+  }
+}

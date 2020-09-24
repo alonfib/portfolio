@@ -1,0 +1,112 @@
+.clouds {
+  position: relative;
+  height: 50%;
+  .cloud {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    left: 0;
+    top: 0;
+  }
+
+  @for $i from 1 through 5 {
+    .cloud:nth-child(#{$i}) {
+      animation: animate calc(16s * #{$i}) linear infinite;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+// .clouds {
+//   position: absolute;
+//   height: 8rem;
+//   width: 45rem;
+
+//   .cloud-1 {
+//     left: 20%;
+//     bottom: 30%;
+//   }
+
+//   .cloud-2 {
+//     left: 80%;
+//     bottom: 35%;
+//   }
+
+//   .cloud-3 {
+//     left: 60%;
+//     bottom: 20%;
+//   }
+
+//   .cloud-4 {
+//     left: 45%;
+//     bottom: 50%;
+//   }
+
+//   .cloud-5 {
+//     left: 32%;
+//     bottom: 6%;
+//   }
+
+//   .cloud-6 {
+//     left: 5%;
+//     bottom: 45%;
+//   }
+
+//   .cloud-7 {
+//     left: -4%;
+//     bottom: 0%;
+//   }
+
+//   .cloud-8 {
+//     left: 25%;
+//   }
+
+//   .cloud-9 {
+//     left: 92%;
+//     top: 11%;
+//   }
+
+//   .cloud-10 {
+//     left: 68%;
+//     bottom: 89%;
+//   }
+
+//   .cloud {
+//     position: absolute;
+//     width: 9%;
+//     height: 25%;
+//     background-color: white;
+//     border-radius: 25% 25% 25% 25% / 50% 50% 50% 50%;
+
+//     &::before {
+//       position: absolute;
+//       content: "";
+//       left: 5%;
+//       top: -16%;
+//       width: 2rem;
+//       height: 2rem;
+//       background-color: white;
+//       border-radius: 50%;
+//     }
+
+//     &::after {
+//       position: absolute;
+//       content: "";
+//       left: 33%;
+//       top: -34%;
+//       width: 2.5rem;
+//       height: 2.5rem;
+//       background-color: white;
+//       border-radius: 50%;
+//     }
+//   }
+// }

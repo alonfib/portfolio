@@ -1,0 +1,33 @@
+.arm-1 {
+  position: absolute;
+  height: 38%;
+  border-radius: 0px 0px 4px;
+  right: -5%;
+  top: 23%;
+  transform: rotate(-20deg);
+  width: 24%;
+  background-color: #885b46;
+}
+.arm-2 {
+  right: -12%;
+  z-index: 20;
+  position: absolute;
+  height: 15%;
+  top: 58%;
+  transform: rotate(-9deg);
+  width: 50%;
+  border-radius: 0px 0px 10px 0px;
+  background-color: #885b46;
+}
+
+.hand {
+  right: 31%;
+  z-index: 20;
+  position: absolute;
+  height: 19%;
+  top: 62%;
+  transform: rotate(-1deg);
+  width: 19%;
+  border-radius: 16px 0px 10px 14px;
+  background-color: #885b46;
+}

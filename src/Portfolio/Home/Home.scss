@@ -1,0 +1,98 @@
+.home {
+  height: 100vh;
+  background-color: #474747;
+  display: flex;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  .links {
+    height: fit-content;
+    width: 72px;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      background-size: cover;
+      width: 25px;
+      height: 25px;
+      transition: all 0.4s ease-in-out;
+    }
+
+    #linkedin {
+      background-image: url(".//../../images/linkedin2.png");
+      &:hover {
+        margin-bottom: 15px;
+      }
+    }
+
+    #github {
+      background-image: url(".//../../images/github2.png");
+      &:hover {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .intro {
+    z-index: 10;
+    position: absolute;
+    left: 51%;
+    bottom: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: white;
+    font-size: 10vh;
+    text-shadow: 1px 1px 4px black;
+  }
+
+  .images-flip {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      background-color: #505570ad;
+    }
+
+    .img1 {
+      width: 100%;
+      height: 100%;
+      background-image: url("../../images/me.jpg");
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .img2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      animation: fade 5s infinite ease-in-out alternate;
+    }
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

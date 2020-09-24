@@ -1,0 +1,100 @@
+.shoe {
+  .bottom {
+    .bottom-1 {
+      position: absolute;
+      background-color: #beb4a3;
+      height: 34%;
+      width: 86%;
+      top: 15%;
+      left: -15%;
+      transform: rotate(57deg);
+      border-radius: 13px;
+    }
+    .bottom-2 {
+      position: absolute;
+      background-color: #beb4a3;
+      height: 50%;
+      width: 84%;
+      bottom: 0%;
+      left: 22%;
+      border-radius: 22px 60px 30px 72px / 81px 56px 52px 37px;
+      transform: rotate(-13deg);
+    }
+  }
+
+  .top {
+    .top-1 {
+      position: absolute;
+      background-color: black;
+      height: 43%;
+      width: 72%;
+      bottom: 8%;
+      left: 30%;
+      border-radius: 22px 60px 30px 72px / 81px 56px 52px 37px;
+      transform: rotate(-13deg);
+    }
+    .top-2 {
+      position: absolute;
+      background-color: black;
+      height: 67%;
+      width: 49%;
+      bottom: 29%;
+      left: 12%;
+      border-radius: 22px 0px 0px 0px / 81px 0px 0px 0px;
+      transform: rotate(-42deg) skewY(-7deg);
+    }
+
+    .top-3 {
+      position: absolute;
+      background-color: black;
+      height: 11%;
+      width: 36%;
+      bottom: 96%;
+      left: 6%;
+      border-radius: 22px 0px 0px 0px / 81px 0px 0px 0px;
+      transform: rotate(100deg) skewX(32deg);
+    }
+    .top-4 {
+      position: absolute;
+      background-color: black;
+      height: 24%;
+      width: 69%;
+      bottom: 58%;
+      left: 27%;
+      border-radius: 22px 10px 113px 76px / 50px 30px 33px 42px;
+      transform: rotate(83deg) skewY(8deg);
+    }
+  }
+  .line {
+    .line-1 {
+      position: absolute;
+      background-color: white;
+      height: 5%;
+      width: 42%;
+      bottom: 73%;
+      left: 16%;
+      border-radius: 27px 83px 113px 136px / 50px 30px 33px 47px;
+      transform: rotate(58deg) skewY(8deg);
+    }
+    .line-2 {
+      position: absolute;
+      background-color: white;
+      height: 6%;
+      width: 36%;
+      bottom: 48%;
+      left: 28%;
+      border-radius: 112px 83px 43px 136px / 50px 30px 5px 47px;
+      transform: rotate(79deg) skewY(8deg);
+    }
+    .line-3 {
+      position: absolute;
+      background-color: white;
+      height: 6%;
+      width: 18%;
+      bottom: 36%;
+      left: 45%;
+      border-radius: 112px 83px 43px 136px / 50px 30px 5px 47px;
+      transform: skewY(8deg);
+    }
+  }
+}

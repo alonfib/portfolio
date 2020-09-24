@@ -1,0 +1,32 @@
+.left-arm-1 {
+  position: absolute;
+  width: 24%;
+  background-color: #885b46;
+  left: -4%;
+  transform: rotate(27deg);
+  top: 10%;
+  height: 47%;
+}
+.left-arm-2 {
+  z-index: 20;
+  left: -15%;
+  position: absolute;
+  height: 16%;
+  bottom: 29%;
+  transform: rotate(22deg);
+  width: 60%;
+  border-radius: 0px 0px 0px 10px;
+  background-color: #885b46;
+}
+
+.left-hand {
+  right: 49%;
+  z-index: 20;
+  position: absolute;
+  height: 19%;
+  top: 64%;
+  transform: rotate(-1deg);
+  width: 22%;
+  border-radius: 16px 15px 10px 14px;
+  background-color: #885b46;
+}

@@ -1,0 +1,38 @@
+.leg {
+  height: 100%;
+  width: 50%;
+
+  .leg-1 {
+    position: absolute;
+    content: "";
+    width: 34%;
+    height: 45%;
+    left: 11%;
+    top: 10%;
+    z-index: 1;
+    background-color: #2b2e3f;
+    border-radius: 18px 7px 8px 31px / 11px 0px 19px 26px;
+  }
+  .leg-2 {
+    position: absolute;
+    content: "";
+    width: 12%;
+    height: 74%;
+    left: 17%;
+    bottom: 8%;
+    transform: rotate(-55deg) skewX(-19deg);
+    z-index: 1;
+    background-color: #2b2e3f;
+    border-radius: 18px 7px 8px 12px / 11px 0px 19px 23px;
+  }
+  .leg-3 {
+    position: absolute;
+    content: "";
+    width: 6%;
+    height: 30%;
+    left: 30%;
+    bottom: -5%;
+    transform: rotate(-42deg) skewX(11deg);
+    background-color: #63473e;
+  }
+}

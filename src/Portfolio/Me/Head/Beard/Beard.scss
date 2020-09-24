@@ -1,0 +1,78 @@
+$beardColor: black;
+
+.beard {
+  height: 47%;
+  width: 100%;
+
+  .beard-1 {
+    height: 54%;
+    position: absolute;
+    bottom: -1%;
+    left: 7%;
+    width: 14%;
+    background: black;
+    border-radius: 76px 0px 0px 71px/ 76px 0 0 189px;
+    transform: rotate(-23deg);
+  }
+
+  .beard-2 {
+    height: 7%;
+    position: absolute;
+    bottom: -1%;
+    left: 24%;
+    width: 52%;
+    background: black;
+    border-radius: 0px 0px 140px 140px/ 0px 0px 70px 70px;
+  }
+
+  .beard-3 {
+    height: 50%;
+    position: absolute;
+    bottom: 0%;
+    right: 8%;
+    width: 14%;
+    background: linear-gradient(-140deg, #322b29 27%, black, black);
+    border-radius: 0px 76px 58px 0px / 0 76px 189px 0px;
+    transform: rotate(23deg);
+  }
+
+  .beard-4 {
+    height: 7%;
+    position: absolute;
+    bottom: 23%;
+    left: 21%;
+    width: 54%;
+    background: $beardColor;
+    border-radius: 30px 20px 0px 0px/ 20px 30px 0px 0px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 26%;
+      height: 300%;
+      background-color: $beardColor;
+      top: 0%;
+      right: -14%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26%;
+      height: 300%;
+      background-color: black;
+      top: 0%;
+      left: -7%;
+    }
+  }
+
+  .beard-5 {
+    height: 5%;
+    position: absolute;
+    bottom: 9%;
+    left: 39%;
+    width: 20%;
+    background: $beardColor;
+    border-radius: 0px 0px 140px 140px/ 0px 0px 70px 70px;
+  }
+}

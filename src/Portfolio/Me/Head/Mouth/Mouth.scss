@@ -1,0 +1,26 @@
+.mouth-container {
+  position: absolute;
+  height: 14%;
+  width: 37%;
+  bottom: 13%;
+  left: 31%;
+
+  .mouth {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    height: 50%;
+    background: #703031;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+
+    .theeth {
+      position: absolute;
+      width: 72%;
+      top: 18%;
+      left: 15%;
+      height: 34%;
+      background: #faefc5;
+      border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    }
+  }
+}

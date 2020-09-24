@@ -1,0 +1,133 @@
+$wood1: #64635f;
+$wood2: #765d43;
+$wood3: #d1cec2;
+
+$size: 18px;
+
+.me-container {
+  font-size: $size;
+  min-width: 40em;
+  height: 21em;
+  overflow: hidden;
+  background: linear-gradient(0deg, white 25%, #94c1e1 55%, #64a2d5, #377fba);
+  position: relative;
+
+  .me {
+    z-index: 100;
+    position: absolute;
+    content: "";
+    width: 38%;
+    height: 77%;
+    left: 10%;
+    bottom: 11%;
+
+    .body {
+      position: absolute;
+      content: "";
+      width: 58%;
+      height: 54%;
+      left: 17%;
+      bottom: 26%;
+
+      .shirt {
+        z-index: 10;
+        position: absolute;
+        height: 70%;
+        width: 58%;
+        left: 21%;
+        background-color: #47444c;
+
+        &::before {
+          border-radius: 33px 33px 56px 69px / 34px 27px 22px 26px;
+          background: #47444c;
+          position: absolute;
+          content: "";
+          width: 166%;
+          height: 54%;
+          left: -33%;
+          top: 0;
+        }
+
+        &::after {
+          border-top: 2em solid #885b46;
+          border-left: 1.6em solid transparent;
+          border-right: 1.6em solid transparent;
+          position: absolute;
+          content: "";
+          height: 54%;
+          left: 33%;
+          top: 0;
+        }
+      }
+
+      .hat {
+        position: absolute;
+        width: 46%;
+        height: 29%;
+        border-radius: 0% 0% 35% 50% / 0% 0% 50% 68%;
+        background-color: black;
+        bottom: -5%;
+        left: 28%;
+        transform: rotate(10deg);
+        z-index: 10;
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 53%;
+          height: 50%;
+          background-color: #1a1a1a;
+          bottom: 61%;
+          border-radius: 3px;
+          left: 55%;
+          transform: rotate(2deg);
+        }
+      }
+
+      .arm {
+        z-index: 9;
+      }
+    }
+
+    .legs {
+      z-index: 9;
+      height: 35%;
+      width: 100%;
+      position: absolute;
+      bottom: 16%;
+      left: 0%;
+
+      .leg-right {
+        position: absolute;
+        width: 100%;
+        bottom: -4px;
+        left: -6%;
+        transform: rotateZ(355deg) rotateY(180deg);
+      }
+    }
+
+    .shoes {
+      z-index: 13;
+      height: 20%;
+      position: absolute;
+      width: 38%;
+      bottom: 0%;
+      left: 30%;
+
+      .shoe {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+      }
+
+      .shoe-left {
+        transform: rotateY(180deg);
+        left: -10%;
+      }
+
+      .shoe-right {
+        left: 65%;
+      }
+    }
+  }
+}

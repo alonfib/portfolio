@@ -1,0 +1,26 @@
+.head {
+  background-color: #885b46;
+  position: absolute;
+  width: 22%;
+  height: 26%;
+  z-index: 100;
+  top: 0%;
+  left: 35%;
+  border-radius: 90px 90px 80px 80px / 65px 65px 120px 120px;
+  border: 1px solid black;
+
+  .eyes {
+    .eye-left,
+    .eye-right {
+      bottom: 43%;
+    }
+    .eye-right {
+      right: 20% !important;
+    }
+    .eye-left {
+      left: 9% !important;
+      .eye-brow {
+      }
+    }
+  }
+}

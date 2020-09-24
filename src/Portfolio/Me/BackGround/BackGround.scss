@@ -1,0 +1,287 @@
+$bgOneColor: repeating-radial-gradient(
+  8px,
+  #807a5d 0%,
+  #6f8748 -106%,
+  #648158 20%
+);
+
+$bgThreeColor: #8faeb1;
+
+.background {
+  z-index: 8;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  .lake {
+    position: absolute;
+    width: 80%;
+    height: 34%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -2;
+    background: linear-gradient(8deg, #9dfcf7, #75a6b0, #abb1db);
+  }
+
+  .bg-1 {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+
+    .mountain-1 {
+      .top {
+        position: absolute;
+        height: 30%;
+        width: 20%;
+        left: -0.9%;
+        bottom: 69%;
+        border-radius: 45px 44px 0px 0px / 26px 30px 0px 0px;
+        background-color: #5b4b4d;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 58%;
+          width: 33%;
+          bottom: 10%;
+          left: 10%;
+          background: linear-gradient(154deg, #5b4b4d 50%, #698450);
+          transform: rotate(22deg) skewX(-30deg);
+          border-radius: 0px 0px 135px 45px / 39px 0px 90px 54px;
+          z-index: 10;
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 58%;
+          width: 33%;
+          bottom: 10%;
+          left: 64%;
+          background: linear-gradient(185deg, #5b4b4d 62%, #698450);
+          transform: skewX(50deg);
+          border-radius: 0px 0px 0px 136px / 39px 0px 89px 74px;
+          z-index: 10;
+        }
+      }
+
+      .green {
+        height: 100%;
+        width: 100%;
+
+        .green-1 {
+          height: 79%;
+          position: absolute;
+          bottom: 0;
+          width: 19%;
+          background-image: $bgOneColor;
+        }
+
+        .green-2 {
+          height: 57%;
+          position: absolute;
+          bottom: -2px;
+          left: 13.7%;
+          width: 15%;
+          transform: rotate(44deg);
+          background-image: $bgOneColor;
+        }
+
+        .green-3 {
+          height: 58%;
+          position: absolute;
+          bottom: -30px;
+          left: 13.7%;
+          width: 87%;
+          transform: rotate(8deg);
+          background-image: $bgOneColor;
+        }
+
+        .green-4 {
+          height: 68%;
+          position: absolute;
+          bottom: -24px;
+          right: -20px;
+          width: 54%;
+          transform: rotate(-6deg);
+          background-image: $bgOneColor;
+          border-radius: 0px 100% 0px 0px / 0px 40% 0px 0px;
+        }
+      }
+    }
+    .mountain-2 {
+      .mountain {
+        position: absolute;
+        content: "";
+        transform: rotate(5deg);
+        height: 23%;
+        width: 13%;
+        left: 41%;
+        bottom: 31%;
+        border-radius: 20px 0 0 0;
+        background-color: #5b4b4d;
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 90%;
+          width: 79%;
+          bottom: 7px;
+          right: -62px;
+          border-radius: 0px 17px 0px 0px / 0px 42px 0px 0px;
+          background-color: #5b4b4d;
+          transform: rotate(-8deg) skewX(23deg);
+        }
+      }
+    }
+  }
+
+  .bg-2 {
+    .mt-1 {
+      position: absolute;
+      width: 29%;
+      height: 10%;
+      background-color: #546a41;
+      bottom: 35%;
+      border-radius: 60% 40% 0% 0% / 100% 100% 0% 0%;
+      right: 8%;
+    }
+
+    .mt-2 {
+      position: absolute;
+      width: 14%;
+      height: 6%;
+      background: linear-gradient(178deg, #4d5560 62%, #c6bdb4 40%);
+      bottom: 30%;
+      right: 27%;
+      transform: skewX(-46deg);
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 36%;
+        right: -24%;
+        border-bottom: 14px solid #4d5560;
+        border-left: 34px solid transparent;
+        border-right: 22px solid transparent;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: -9%;
+        right: -68%;
+        border-bottom: 15px solid #c6bdb4;
+        border-left: 21px solid transparent;
+        border-right: 59px solid transparent;
+      }
+
+      .mt-2--small-mt {
+        position: absolute;
+        width: 35%;
+        height: 38%;
+        background-color: #605c68;
+        bottom: -42%;
+        right: -119%;
+        border-radius: 5px 0px 0px 127px / 5px 0px 0px 34px;
+        transform: skewX(9deg) rotate(4deg);
+
+        &::before {
+          position: absolute;
+          content: "";
+          bottom: -10%;
+          right: -35%;
+          border-bottom: 10px solid #605c68;
+          border-left: 11px solid transparent;
+          border-right: 13px solid transparent;
+        }
+      }
+    }
+
+    .mt-3 {
+      position: absolute;
+      width: 14%;
+      height: 5%;
+      background: linear-gradient(#4d5560 62%, #c6bdb4 40%);
+      bottom: 31%;
+      right: 4%;
+      transform: skewX(-46deg);
+
+      &::before {
+        position: absolute;
+        content: "";
+        bottom: 36%;
+        right: -19%;
+        border-bottom: 11px solid #4d5560;
+        border-left: 11px solid transparent;
+        border-right: 17px solid transparent;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 5%;
+        right: -16%;
+        width: 100%;
+        height: 40%;
+        background: #c6bdb4;
+        transform: skewX(-84deg);
+      }
+    }
+  }
+
+  .bg-3 {
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0%;
+    bottom: 35%;
+
+    .mt-1 {
+      position: absolute;
+      width: 36%;
+      height: 83%;
+      left: -20%;
+      bottom: -27%;
+      background-color: $bgThreeColor;
+      border-radius: 0% 100% 0% 0% / 0% 60% 0% 0%;
+      transform: rotateX(73deg) skewX(48deg);
+    }
+
+    .mt-2 {
+      position: absolute;
+      width: 100%;
+      height: 11%;
+      left: 0%;
+      bottom: 1%;
+      background-color: $bgThreeColor;
+      transform: rotate(2deg);
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 81%;
+        width: 24%;
+        bottom: 39%;
+        left: 38%;
+        border-radius: 70px 0px 0px 0px / 31px 0px 0px 0px;
+        background-color: $bgThreeColor;
+        transform: rotate(6deg) skewX(-58deg);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 82%;
+        width: 8%;
+        bottom: 46%;
+        left: 64%;
+        border-radius: 60px 0px 0px 0px / 35px 0px 0px 0px;
+        background-color: $bgThreeColor;
+        transform: rotate(18deg) skewX(-37deg);
+      }
+    }
+  }
+}
